@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="static/fontawesome/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/stylee.css">
+    <link rel="icon" type="image/jpg" sizes="100x100" href="static/images/nefsti.jpg">
+    <title>HOME</title>
+    <style>
+        .form{
+            background-color: #ffffff;
+        }
+      a{
+        text-decoration: none;
+        color:black;
+      }
+      .na{
+        padding: 40px;
+      }
+      .name{
+        color: orange;
+      }
+      .test{
+        height: 500px;
+        background-color: rgb(242, 239, 239);
+      }
+
+#yy{
+			color:orangered;height:4px;width: 50px;
+		}
+.benefit{
+    background-color: #ee8c2a;
+    
+}
+.im{
+  margin-top: -100px;
+}
+
+.t{
+    margin-top: -50px;
+    gap: 20px;
+}
+.y{
+             min-height: 700px;
+			background-image:url("static/images/contact.jpg");
+			background-size:100% 100%;
+			background-attachment: fixed;
+           
+
+}
+.let{
+  min-height: 500px;
+			background-image:url("static/images/nefti5.jpg");
+			background-size:50% 50%;
+			
+
+}
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#backToTopBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid body">
+       
+      
+        <nav class="navbar navbar-dark bg-light fixed-top  two">
+                    <div class="container-fluid  ">
+                      <a class="navbar-brand" href="/"><img src="static/images/nefsti2.png"  class="" style="height: 120px;" ></a>
+                      <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon btn btn-dark"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header bg-dark">
+                          <h5 class="offcanvas-title text-light" id="offcanvasDarkNavbarLabel">MENU</h5>
+                          <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                        </div>
+                        <div class="offcanvas-body bg-dark">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="/">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="/about">ABOUT US</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="/contact">CONTACT US</a>
+                            </li>
+                          
+                          
+                            </ul>
+                          </li>text-dark
+                          </ul>
+                          
+                        </div>
+                        </div>
+                      </div>
+           
+                 </nav>
+                 
+                 <div class="row  y mt-5" >
+                    <div id="o" style="margin-top:0px;flex-direction:column">
+				
+                        <div class="col-md-12 d-flex justify-content-end"><div class="col text-center text-light " style="font-size: 60px;margin-top: 250px;">
+                           
+                            <p id="ii"> CONTACT US</p>
+                           
+                            <a href="/about" class="btn btn-outline-warning mb-5">ABOUT US</a>
+                        </div>
+                          
+
+                            
+                    </div>
+                 </div>
+                 </div>
+                
+                <div class="row contact">
+
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 form" style="padding: 50px;"> <div class="text-center"><h2 >CONTACT US</h2></div>
+                    
+
+                        <form class="row " method="post" action="">
+
+                            {% set message =get_flashed_messages()%}
+                            {% for me in message%}
+                            <P class="alert alert-success bg-success text-light">{{me}}</P>
+                            {%endfor%}
+
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="inputEmail4" name="first" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">last name</label>
+                              <input type="text" class="form-control" id="inputPassword4" name="name" required>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" name="email" required>
+                              </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity" name="city" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="inputCity" name="phone" required>
+                              </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select  name="state" id="select" class="form-control" required>
+                                <option selected>Choose...</option>
+                                {% for state in state%}
+                                <option value="{{state.state_id}}">{{state.state_name}}</option>
+                                {%endfor%}
+                               </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">Services</label>
+                                <select id="inputState" class="form-select" name="services" required>
+                                  <option selected>Choose...</option>
+                                  {% for services in services%}
+                                <option value="{{services.service_id}}">{{services.service_name}}</option>
+                                {%endfor%}
+                               </select>
+                                </select>
+                              </div>
+                          
+                            
+                            <div class="col-12 mt-3">
+                              <button  class="btn btn-primary">Submit</button>
+                            </div>
+                            <input type="hidden" value="{{csrf_token()}}" name="csrf_token">
+                          </form>
+             
+                    
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+               
+                <div id="backToTopBtn">
+                  <a href="#top">^</a>
+                  </div>
+              
+                <div class="row footer">
+                  <div class="row" style="height: 8px;"></div>
+                  <div class="col-md-2">
+                    
+                  </div>
+                  <div class="col-md-4 "><h2>Let's Talk!</h2><h6><i class="fa-solid fa-envelope" style="color: #0a0a0b;"></i>  Nefstienergy@gmail.com</h6>
+                  <h6><i class="fa-solid fa-location-dot" style="color: #0c0c0e;"></i>  Bolajide Avenue, Gbagada, Lagos State.</h6><h6><i class="fa-sharp fa-solid fa-phone" style="color: #111212;"></i>  08137979796</h6>
+                  </div>
+                  <div class="col-md-4 "><h3>Support</h3>
+                  <p><a href="/"><b>Contact Us</b></a></p>
+                <p><a href="/" ><b>About Us</b></a></p>
+                <p><b>Privacy Policy</b></p>
+
+                  </div>
+                  <div class="col-md-2">
+                    <h4 class="">Follow Us</h4>
+
+                    <p><a href="https://instagram.com/nefsti_energy?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-square-instagram fa-2x mx-2" style="color: #18191b;"></i>
+                    </a><a href="https://www.facebook.com/profile.php?id=100090026813182"><i class="fa-brands fa-facebook fa-2x mx-2" style="color: #1b1c1d;"></i></a>
+                    <a href="https://wa.link/dtkc3l"><i class="fa-brands fa-square-whatsapp fa-2x " style="color: #131416;"></i></a></p>
+                  </div>
+                </div>
+                <div class="row foot text-center ">
+                  <div class="col mt-5">
+                    
+                    <b>All Rights Reserved By &copy Nefsti Energy 2023</b> </div>
+                </div>
+         </div>
+
+
+
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.bundle.js">
+	
+
+    </script>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+          scrollFunction();
+      };
+  
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("backToTopBtn").style.display = "block";
+          } else {
+              document.getElementById("backToTopBtn").style.display = "none";
+          }
+      }
+  
+      // When the user clicks on the button, scroll to the top of the document
+      document.getElementById("backToTopBtn").addEventListener("click", function() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
+  </script>
+</body>
+</html>

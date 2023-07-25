@@ -1,0 +1,33 @@
+.one{
+    border: 2px solid red;
+}
+.body{
+    height: 1500px;
+  
+}
+
+.contact{
+    height: 800px;
+    background-color: rgb(219, 215, 215);
+   
+}
+.footer{
+    background-color:  #ffa244;
+    height: 200px;
+   height: 350px;
+   
+}
+.foot{
+    background-color:  #ee8c2a;
+    height: 100px;
+}
+#o{
+    background-color:rgba(0, 0, 0, 0.7);
+   
+}
+#p{
+    background-color:rgba(0, 0, 100, 0.6);
+}
+#ii{
+    color: rgb(223, 194, 63);
+}
